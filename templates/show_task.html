@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task manager</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h1>My tasks</h1>   
+    {% for  task in tasks %}
+    <div class="card">
+       <h2>{{task.title}}</h2> 
+       <p>{{task.caption}}</p>
+       <a class="button" href="/task/{{ task.pk }}/">Подробнее</a> 
+    </div>
+    {% endfor %}
+    <a class="button" href="/create_task/">Create task</a>
+    <a class="button" href="/logout/">Logout</a>
+</body>
+</html>

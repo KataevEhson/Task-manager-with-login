@@ -1,0 +1,88 @@
+/* Общий вид страницы */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f5fa;
+    color: #263248;
+    max-width: 650px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+/* Формы и карточки задач */
+form, .card {
+    background-color: white;
+    padding: 25px;
+    border: 1px solid #dce3ed;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Кнопки и ссылки */
+button, .button {
+    display: inline-block;
+    background-color: #3567d6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button:hover, .button:hover {
+    background-color: #254fae;
+}
+
+a {
+    color: #3567d6;
+}
+
+.card h2 {
+    font-size: 21px;
+    margin-top: 0;
+    overflow-wrap: anywhere;
+}
+
+.card p {
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+/* Кнопки действий рядом, без отдельной карточки для Delete. */
+.task-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.task-actions .delete-action {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.task-actions button, .task-actions .button {
+    margin: 0;
+    line-height: 1.2;
+}
